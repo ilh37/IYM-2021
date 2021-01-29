@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "../css/Styles.css";
 
 import MapBoxmain from "../HomeComponents/Mapboxmain";
+import CuratorFeed from "../Components/SocialComponents/CuratorFeed";
 
 class LiveEvent extends Component {
   render() {
@@ -24,7 +25,9 @@ class LiveEvent extends Component {
             ></iframe>
           </div> */}
         </div>
-        <div className="col Live-Event-Feed-Box">Live Feed</div>
+        <div className="col Live-Event-Feed-Box">
+          <CuratorFeed feedID="https://cdn.curator.io/published/d730b9b0-d3dd-4b32-a7f1-454eea2c4799.js" />
+        </div>
       </div>
     );
   }
