@@ -1,5 +1,4 @@
 import React from 'react';
-//import {TwitterTimelineEmbed} from 'react-twitter-embed';
 
 
 class CuratorFeed extends React.Component {

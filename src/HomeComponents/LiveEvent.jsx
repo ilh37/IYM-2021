@@ -5,6 +5,8 @@ import "../css/Styles.css";
 import MapBoxmain from "../HomeComponents/Mapboxmain";
 import CuratorFeed from "../Components/SocialComponents/CuratorFeed";
 
+const FEED = "https://cdn.curator.io/published/9f9e3fe1-73a0-40c2-a822-81500b89790d.js";
+
 class LiveEvent extends Component {
   render() {
     return (
@@ -26,7 +28,7 @@ class LiveEvent extends Component {
           </div> */}
         </div>
         <div className="col Live-Event-Feed-Box">
-          <CuratorFeed feedID="https://cdn.curator.io/published/d730b9b0-d3dd-4b32-a7f1-454eea2c4799.js" />
+          <CuratorFeed feedID={FEED} />
         </div>
       </div>
     );
