@@ -20,7 +20,7 @@ h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 0px 2px 4px rgba(214, 59, 47, 0.25);
-  margin-top: 100px;
+  margin-top: 112px;
 }
 
 h2 {
@@ -63,22 +63,18 @@ a:hover, a:active, a:focus {
   z-index: 10;
 }
 .Nav-Bar .Nav-Bar-Title {
-  text-align: left;
-  color: #ffffff;
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
   padding-top: 3px;
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: left;
   flex-wrap: wrap;
-  width: -webkit-min-content;
-  width: min-content;
+  object-fit: cover;
 }
 .Nav-Bar .Nav-Bar-Title a:hover, .Nav-Bar .Nav-Bar-Title a:active, .Nav-Bar .Nav-Bar-Title a:focus {
   text-shadow: 0px 2px 4px rgba(218, 0, 1, 0.3);
+}
+.Nav-Bar .Nav-Bar-Title a img {
+  width: 350px;
 }
 .Nav-Bar .Nav-Bar-Content {
   text-align: right;
@@ -105,12 +101,16 @@ a:hover, a:active, a:focus {
 }
 
 @media only screen and (max-width: 956px) {
+  h1 {
+    margin-top: 0px !important;
+  }
+
   .Nav-Bar {
     position: relative !important;
     z-index: 0 !important;
   }
   .Nav-Bar .Nav-Bar-Title {
-    text-align: center !important;
+    justify-content: center !important;
   }
   .Nav-Bar .Nav-Bar-Content {
     flex-flow: column wrap !important;
@@ -119,9 +119,14 @@ a:hover, a:active, a:focus {
     padding: 3px 0 !important;
   }
 }
-@media only screen and (max-width: 450px) {
-  .Nav-Bar-Title {
-    margin-bottom: 10px !important;
+@media only screen and (max-width: 650px) {
+  .Nav-Bar .Nav-Bar-Title {
+    padding-right: 60px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .Nav-Bar .Nav-Bar-Title {
+    padding-right: 0px;
   }
 }
 .Live-Event {
@@ -157,8 +162,8 @@ a:hover, a:active, a:focus {
   padding: 0;
   margin: 0;
   width: 104%;
-  margin-left: -2%;
-  margin-bottom: -1.05%;
+  margin-left: -15px;
+  margin-bottom: -10px;
   margin-top: 6px;
 }
 .Live-Event .Live-Event-Feed-Box {
@@ -258,19 +263,25 @@ a:hover, a:active, a:focus {
   color: #2d2d2c;
   font-size: 20px;
   padding: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: 300;
 }
 
-@media only screen and (max-width: 890px) {
-  .Partners-Box {
-    margin: 0 15px !important;
+@media only screen and (max-width: 1000px) {
+  .Partners .Partners-Box {
+    margin: 9px 50px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .Partners .Partners-Text {
+    padding-top: 0 !important;
   }
 }
 @media only screen and (max-width: 695px) {
   .Partners-Box {
     height: 200px !important;
     width: auto !important;
+    margin: 9px 20px !important;
   }
   .Partners-Box .Partners-Text {
     display: none !important;
@@ -280,6 +291,7 @@ a:hover, a:active, a:focus {
   .Partners-Box {
     height: 100px !important;
     width: auto !important;
+    margin: 9px 10px !important;
   }
   .Partners-Box .Partners-Logo {
     height: 100px !important;
@@ -292,10 +304,12 @@ a:hover, a:active, a:focus {
   }
 }
 .Pledge-Tracker {
+  margin: auto;
   padding: 0px 80px;
   padding-bottom: 50px;
   padding-top: 10px;
   text-align: center;
+  max-width: 1480px;
 }
 .Pledge-Tracker .Pledge-Tracker-Description {
   font-weight: 500;
@@ -314,6 +328,171 @@ a:hover, a:active, a:focus {
   text-align: center;
   letter-spacing: 1px;
   padding: 10px 0;
+}
+
+.Video-Header {
+  text-align: center;
+}
+.Video-Header video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.Video-Header .Video-Header-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
+.Video-Header .Video-Header-Content .Video-Header-Content-Text {
+  color: #ffffff;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.4);
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-size: 2vw;
+  text-align: center;
+  padding: 20px 40px;
+}
+.Video-Header .Video-Header-Content .Pledge-Button {
+  margin: 0 10px;
+  font-size: 100px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.Info {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: -40px;
+}
+.Info .Info-Subheading {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+.Info .Info-Content {
+  margin-top: 0;
+}
+.Info .Info-Image {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  width: -webkit-min-content;
+  width: min-content;
+  width: 450px;
+  margin-bottom: 50px;
+}
+
+.Learn-More {
+  text-align: center;
+  padding: 20px 80px;
+  padding-top: 100px;
+}
+.Learn-More .Learn-More-Content {
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.Learn-More a {
+  color: #da0001;
+}
+.Learn-More a:hover, .Learn-More a:active, .Learn-More a:focus {
+  color: #ffffff;
+}
+.Learn-More .Learn-More-Logo {
+  width: 120px;
+}
+
+.About-Content {
+  text-align: left;
+  padding: 0 80px;
+}
+.About-Content p {
+  text-indent: 50px;
+}
+
+@media only screen and (max-width: 956px) {
+  .About-Content {
+    text-align: center;
+  }
+  .About-Content p {
+    text-indent: 0;
+    font-size: 18px;
+  }
+}
+.Social-Button-Box {
+  text-align: center;
+  padding: 0 80px;
+}
+.Social-Button-Box .Social-Button-Header {
+  font-size: 26px;
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+.Social-Button-Box a {
+  color: #2d2d2c;
+}
+.Social-Button-Box a:hover, .Social-Button-Box a:active, .Social-Button-Box a:focus {
+  color: #da0001;
+}
+.Social-Button-Box .Social-Button {
+  padding-bottom: 40px;
+  margin: 0 10px;
+  font-size: 100px;
+  width: 120px;
+}
+
+@media only screen and (max-width: 575px) {
+  .Social-Button-Box {
+    padding: 0 40px;
+  }
+  .Social-Button-Box .Social-Button {
+    margin: 10px 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Social-Button-Box .Social-Button {
+    margin: 10px 45px;
+    padding-bottom: 0px;
+  }
+}
+.Athlete-Info {
+  padding: 40px 80px;
+  padding-bottom: 40px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Athlete-Info .Athlete-Info-Photo {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px #00000026, 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 3;
+  flex-grow: 3;
+  height: 500px;
+}
+.Athlete-Info .Athlete-Info-Bio-Box {
+  text-align: left;
+  min-width: 300px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .Parallax {
@@ -363,5 +542,7 @@ a:hover, a:active, a:focus {
   color: #da0001;
   background-color: #f2f2f2;
 }
-
-
+.liveDataCell {
+  color: #2d2d2c;
+  padding: 10px 10px 0px 10px;
+}

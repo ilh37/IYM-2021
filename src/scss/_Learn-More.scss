@@ -1,0 +1,26 @@
+.Learn-More {
+  text-align: center;
+  padding: 20px 80px;
+  padding-top: 100px;
+
+  .Learn-More-Content {
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  a {
+    color: #da0001;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #ffffff;
+    }
+  }
+
+  .Learn-More-Logo {
+    width: 120px;
+  }
+}

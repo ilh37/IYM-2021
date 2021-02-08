@@ -1,0 +1,19 @@
+.About-Content {
+  text-align: left;
+  padding: 0 80px;
+
+  p {
+    text-indent: 50px;
+  }
+}
+
+@media only screen and (max-width: 956px) {
+  .About-Content {
+    text-align: center;
+
+    p {
+      text-indent: 0;
+      font-size: 18px;
+    }
+  }
+}

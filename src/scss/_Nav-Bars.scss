@@ -8,23 +8,22 @@
   z-index: 1;
 
   .Nav-Bar-Title {
-    text-align: left;
-    color: #ffffff;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
     padding-top: 3px;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: left;
     flex-wrap: wrap;
-    width: min-content;
+    object-fit: cover;
+
     a {
       &:hover,
       &:active,
       &:focus {
         text-shadow: 0px 2px 4px rgba(218, 0, 1, 0.3);
+      }
+
+      img {
+        width: 350px;
       }
     }
   }
@@ -60,12 +59,16 @@
 }
 
 @media only screen and (max-width: 956px) {
+  h1 {
+    margin-top: 0px !important;
+  }
+
   .Nav-Bar {
     position: relative !important;
     z-index: 0 !important;
 
     .Nav-Bar-Title {
-      text-align: center !important;
+      justify-content: center !important;
     }
     .Nav-Bar-Content {
       flex-flow: column wrap !important;
@@ -76,8 +79,18 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
-  .Nav-Bar-Title {
-    margin-bottom: 10px !important;
+@media only screen and (max-width: 650px) {
+  .Nav-Bar {
+    .Nav-Bar-Title {
+      padding-right: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .Nav-Bar {
+    .Nav-Bar-Title {
+      padding-right: 0px;
+    }
   }
 }

@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import "../css/Styles.css";
 
-import NavBar from "../HomeComponents/NavBar";
-import PageHeader from "../HomeComponents/PageHeader";
-import LiveEvent from "../HomeComponents/LiveEvent.jsx";
-import PledgeTracker from "../HomeComponents/PledgeTracker";
-import AthleteGallery from "../HomeComponents/AthleteGallery";
-import PastGallery from "../HomeComponents/PastGallery";
-import Partners from "../HomeComponents/Partners";
+import NavBar from "../HomeComponents/NavBar/NavBar";
+import PageHeader from "../HomeComponents/Header";
+import LiveEvent from "../HomeComponents/LiveEvent";
+import AthleteGallery from "../HomeComponents/Gallery/AthleteGallery";
+import Partners from "../HomeComponents/Partner/Partners";
 import Footer from "../HomeComponents/Footer";
 
 import { Parallax } from "react-parallax";
@@ -20,9 +18,7 @@ class Home extends Component {
         <NavBar />
         <PageHeader text="Welcome" />
         <LiveEvent />
-        <PledgeTracker />
         <AthleteGallery />
-        <PastGallery />
         <Partners />
         <Footer />
       </Parallax>

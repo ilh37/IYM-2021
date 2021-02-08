@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "../css/Styles.css";
 
-import MapBoxmain from "../HomeComponents/Mapboxmain";
+import MapBox from "../HomeComponents/Map/MapBox";
 import CuratorFeed from "../Components/SocialComponents/CuratorFeed";
 
 const FEED = "https://cdn.curator.io/published/9f9e3fe1-73a0-40c2-a822-81500b89790d.js";
@@ -10,12 +10,18 @@ const FEED = "https://cdn.curator.io/published/9f9e3fe1-73a0-40c2-a822-81500b897
 class LiveEvent extends Component {
   render() {
     return (
-      <div className="row Live-Event">
+      <div className="Live-Event row">
         <div className="col Live-Event-Map-Box">
-          {/* COMMENT OUT FOR SANDRINE, USE GARMIN MAP */}
-          <MapBoxmain />
+          {/* USE MAPBOX FOR ALL EVENTS AFTER RWANDA */}
+          <MapBox
+            token="pk.eyJ1IjoiaXRzeW91cm1vdmUiLCJhIjoiY2tqeGJqbzg5MDF3eDJ3bzh1MTk2bWhqYSJ9.w4UUfWxmTk630JJ0CgtfnA"
+            style="mapbox://styles/itsyourmove/ckjxu50uf218917pc610sqa3n"
+            latitude={21}
+            longitude={79}
+            zoom={4.2}
+          />
 
-          {/* USE FOR SANDRINE'S DURATION */}
+          {/* V REMOVE GARMIN MAP WHEN RWANDA IS FINISHED V */}
           {/* <div className="Garmin-Map">
             <iframe
               src="https://share.garmin.com/share/lespoulettesfrites"
@@ -26,6 +32,7 @@ class LiveEvent extends Component {
               height="760"
             ></iframe>
           </div> */}
+          {/* ^ REMOVE GARMIN MAP WHEN RWANDA IS FINISHED ^ */}
         </div>
         <div className="col Live-Event-Feed-Box">
           <CuratorFeed feedID={FEED} />

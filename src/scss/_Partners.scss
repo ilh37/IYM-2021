@@ -28,15 +28,26 @@
       color: #2d2d2c;
       font-size: 20px;
       padding: 10px;
-      padding-top: 20px;
+      padding-top: 10px;
       font-weight: 300;
     }
   }
 }
 
-@media only screen and (max-width: 890px) {
-  .Partners-Box {
-    margin: 0 15px !important;
+@media only screen and (max-width: 1000px) {
+  .Partners {
+    //padding-bottom: 10px;
+    .Partners-Box {
+      margin: 9px 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .Partners {
+    .Partners-Text {
+      padding-top: 0 !important;
+    }
   }
 }
 
@@ -44,6 +55,8 @@
   .Partners-Box {
     height: 200px !important;
     width: auto !important;
+    margin: 9px 20px !important;
+
     .Partners-Text {
       display: none !important;
     }
@@ -54,6 +67,7 @@
   .Partners-Box {
     height: 100px !important;
     width: auto !important;
+    margin: 9px 10px !important;
 
     .Partners-Logo {
       height: 100px !important;

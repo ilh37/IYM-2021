@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Open Sans", sans-serif;
   color: #d63b2f;
+  //padding-top: 40px;
 }
 
 h1,
@@ -20,7 +21,7 @@ h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 0px 2px 4px rgba(214, 59, 47, 0.25);
-  margin-top: 100px; // imperfect solution to navbar problem
+  margin-top: 112px; // imperfect solution to navbar problem
 }
 
 h2 {

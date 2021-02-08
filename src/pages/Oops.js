@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NavBar from "../HomeComponents/NavBar";
-import PageHeader from "../HomeComponents/PageHeader";
+import NavBar from "../HomeComponents/NavBar/NavBar";
+import PageHeader from "../HomeComponents/Header";
 
 import { Parallax } from "react-parallax";
 import background from "../images/background.png";

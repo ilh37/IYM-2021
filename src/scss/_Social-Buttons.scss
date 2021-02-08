@@ -1,0 +1,48 @@
+.Social-Button-Box {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  text-align: center;
+  padding: 0 80px;
+
+  .Social-Button-Header {
+    font-size: 26px;
+    padding-bottom: 15px;
+    padding-top: 40px;
+  }
+
+  a {
+    color: #2d2d2c;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #da0001;
+    }
+  }
+
+  .Social-Button {
+    padding-bottom: 40px;
+    margin: 0 10px;
+    font-size: 100px;
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .Social-Button-Box {
+    padding: 0 40px;
+
+    .Social-Button {
+      margin: 10px 10px;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Social-Button-Box {
+    .Social-Button {
+      margin: 10px 45px;
+      padding-bottom: 0px;
+    }
+  }
+}
