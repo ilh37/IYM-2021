@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "../css/Styles.css";
+import "../css/Feed.css";
 
 import MapBox from "../HomeComponents/Map/MapBox";
 import CuratorFeed from "../Components/SocialComponents/CuratorFeed";
